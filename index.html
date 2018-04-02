@@ -1,59 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>Hello MUI</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-		<!--标准mui.css-->
-		<link rel="stylesheet" href="css/mui.min.css">
-		<!--App自定义的css-->
-		<!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
-		<style>
-			h5{
-		        padding-top: 8px;
-		        padding-bottom: 8px;
-		        text-indent: 12px;
-		    }
-		    
-			.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
-				font-size: 15px;
-				margin-top:8px;
-				color: #333;
-			}
-		</style>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
 	</head>
-
 	<body>
 		<header class="mui-bar mui-bar-nav">
-		    <h1 class="mui-title">图文表格</h1>
+		    <h1 class="mui-title">标题</h1>
 		</header>
-		<div class="mui-content" style="background-color:#fff">
-		    <ul class="mui-table-view mui-grid-view">
-		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
-		            <a href="#">
-		                <img class="mui-media-object" src="images/shuijiao.jpg">
-		                <div class="mui-media-body">幸福就是可以一起睡觉</div></a></li>
-		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
-		            <a href="#">
-		                <img class="mui-media-object" src="images/muwu.jpg">
-		                <div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div></a></li>
-		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
-		            <a href="#"><img class="mui-media-object" src="images/cbd.jpg">
-		                <div class="mui-media-body">Color of SIP CBD</div></a></li>
-		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
-		            <a href="#">
-		                <img class="mui-media-object" src="images/yuantiao.jpg">
-		                <div class="mui-media-body">静静看这世界</div></a></li>
-		    </ul>    
+		<div class="mui-content">
+		    
 		</div>
+		<nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item mui-active">
+		        <span class="mui-icon mui-icon-home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-phone"></span>
+		        <span class="mui-tab-label">电话</span>
+		    </a>
+		    <a class="mui-tab-item" id="settingId">
+		        <span class="mui-icon mui-icon-gear"></span>
+		        <span class="mui-tab-label">设置</span>
+		    </a>
+		</nav>
+		<script src="js/mui.min.js"></script>
+		<script src="js/index.js"></script>
 	</body>
-	<script src="js/mui.min.js"></script>
-	<script>
-		mui.init({
-			swipeBack:true //启用右滑关闭功能
-		});
-	</script>
+	
 </html>
